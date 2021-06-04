@@ -45,5 +45,5 @@ def greatest_common_factor(a,b):
             a = n
         return b
 
-print(sum_by_trial(1000,2,21))
-print(sum_by_math(1000,2,21))
+print(sum_by_trial(1000,2,2))
+print(sum_by_math(1000,2,2))
