@@ -2,10 +2,13 @@
 Solution for Project Euler problem 001
 https://projecteuler.net/about
 
-Problem 001 asks for the sum of all the multiples of 3 or 5 bellow 1000. 
+Problem 001 asks for the sum of all the multiples of 3 or 5 bellow 1000. Two solutions are given.
 
-Two solutions are given.
-Solutions were generalized to find the sum of all multiples of two given integers bellow given integer
+The first solution tries all numbers bellow 1000 and verifies if they follow the division rule. It's a simple solution and works fine.
+
+The second solution uses arithmetic progression to find the sum of a serie. It is not as simple as the first solution, but it allows for a more generalization without losing performance.
+
+Solutions were generalized to find the sum of all multiples of two given integers bellow any given integer.
 """
 
 
