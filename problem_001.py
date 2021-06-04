@@ -27,10 +27,12 @@ def sum_by_math(n: int = 1000, a: int=3, b: int=5) -> int:
     return t1 + t2 - t3
 
 def least_common_multiple(a,b):
+    """Find the least common multiple of two given numbers"""
     c = greatest_common_factor(a,b)
     return (a*b)/c
 
 def greatest_common_factor(a,b):
+    """Find the greatest common factor of two given numbers"""
     n = 0
     if a > b:
         while b != 0:
@@ -45,5 +47,5 @@ def greatest_common_factor(a,b):
             a = n
         return b
 
-print(sum_by_trial(1000,2,2))
-print(sum_by_math(1000,2,2))
+print(sum_by_trial(1000,3,5))
+print(sum_by_math(1000,3,5))
