@@ -9,6 +9,7 @@ My intend with this repository is to showcase my **problem solving skills** by s
 The project rules allows sharing solutions just for the first one-hundred problems. In accordance with this, I will not share any solution for the 100+ problems.  
 
 Comments and suggestions are welcome,
+
 Thank you,
 
 ---
