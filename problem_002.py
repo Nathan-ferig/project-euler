@@ -20,7 +20,9 @@ def Even_Fibonacci_Sum(n: int = 1000) -> int:
     return EFS
 
 def Sum_Even_Fibonnaci(n: int = 1000) -> int:
-    """Computes just the even terms in the sequence."""
+    """Computes just the even terms in the sequence.
+    This is more efficient, because it does not need
+    to test the number to know if it is even of odd"""
     a: int = 1
     b: int = 2
     EFS = 0
