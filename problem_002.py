@@ -13,9 +13,18 @@ def Even_Fibonacci_Sum(n: int = 1000) -> int:
     EFS: int = 0
     while n > b:
         if b % 2 == 0: EFS += b
-        c = a + b
-        a = b
-        b = c
+        a, b = b, a + b
     return EFS
 
-print(Even_Fibonacci_Sum(4000000))
+def Sum_Even_Fibonnaci(n: int = 1000) -> int:
+  
+    a: int = 1
+    b: int = 2
+    EFS = 0
+    while n > b:
+        EFS += b
+        a, b = a + 2*b, 2*a + 3*b
+    return EFS
+    
+print(Even_Fibonacci_Sum())
+print(Sum_Even_Fibonnaci())
