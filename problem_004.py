@@ -13,8 +13,9 @@ def largest_palindrome():
     for i in range(999,99,-1):
         for j in range(i,99,-1):
             mult = i*j
-            if (str(mult) == str(mult)[ : : -1]):
+            string = str(mult)
+            if (string == string[ : : -1]):
                 palindrome.append(mult)
     return max(palindrome)
-
+    
 print(largest_palindrome())
