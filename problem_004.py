@@ -1,11 +1,10 @@
 """
-Find the largest palindrome made from the product of two 3-digit numbers.
+Solution for Project Euler problem 004
+https://projecteuler.net/about
 
+Problem 004 asks for the largest palindrome made from the product of two 3-digit numbers.
 
-a  = 102
-b = str(a)
-print(b)
-print(b[::-1])
+Solution multiplies all two 3-digit numbers and verify if they are palindrome or not. 
 """
 
 def largest_palindrome():
