@@ -4,7 +4,7 @@ https://projecteuler.net/about
 
 Problem 003 asks for the largest prime factor of the number 600851475143.
 
-Solution run division tests for the number n and verify it the divisors are prime or not.
+Solution runs division tests for the number n and verify it the divisors are prime or not.
 """
 
 def IsPrime(n: int) -> bool:
