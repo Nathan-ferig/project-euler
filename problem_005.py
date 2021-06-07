@@ -6,8 +6,10 @@ Problem 005 asks for the smallest positive number that is evenly divisible by al
 
 Problem 005 states that 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. Therefore, the smallest number evenly divisible by 1 to 20 is also divisible by 2520 and we can use this information to make solution more efficient.
 
-
 Solution runs division tests for all numbers multiple of 2520 and verify if they can be evenly divisible by 11 to 20.
+
+Solution were optimized thanks to the insights shared at:
+https://stackoverflow.com/questions/8024911/project-euler-5-in-python-how-can-i-optimize-my-solution
 """
 
 def smallest_multiple(initial: int = 2520) -> str:
