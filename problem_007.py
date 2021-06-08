@@ -1,7 +1,12 @@
 """
-By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+Solution for Project Euler problem 007
+https://projecteuler.net/about
 
-What is the 10 001st prime number?
+Problem 007 asks for the 10 001st prime number.
+
+Solution uses the Sieve of Eratosthenes algorithm and
+a equation for an upper limit for the nth of prime
+to calculate the 10 001st prime number efficiently.
 """
 from typing import List
 
