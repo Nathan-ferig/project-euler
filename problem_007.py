@@ -3,8 +3,9 @@ By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that 
 
 What is the 10 001st prime number?
 """
+from typing import List
 
-def ListPrimes(upper_limit):
+def ListPrimes(upper_limit: int) -> List[int]:
     """This uses the Sieve of Eratosthenes ancient algorithm to find
     all prime numbers up to a given limit. With it, one does not need
     to run division tests to find if a number is prime or not.
@@ -32,7 +33,7 @@ def ListPrimes(upper_limit):
         primes.append(maybe_prime)
     return primes
 
-def Upper_Limit_Nth_Prime(nth_prime):
+def Upper_Limit_Nth_Prime(nth_prime: int) -> int:
     """Finds a well suitable upper limit for the nth_prime number.
 
     This works because there's a equation that yields a upper limit
@@ -45,7 +46,7 @@ def Upper_Limit_Nth_Prime(nth_prime):
         return 15
     return int(nth_prime * (log(nth_prime) + log(log(nth_prime))))
 
-def Nth_Prime(nth_prime):
+def Nth_Prime(nth_prime: int) -> int:
     nth_prime -= 1          # Python index starts at zero
     primes = ListPrimes(Upper_Limit_Nth_Prime(nth_prime))
     return primes[nth_prime]
