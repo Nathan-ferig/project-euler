@@ -15,9 +15,9 @@ https://stackoverflow.com/questions/8024911/project-euler-5-in-python-how-can-i-
 def smallest_multiple(initial: int = 2520) -> str:
     divisors = [11,12,13,14,15,16,17,18,19,20]
 
-    for test in range(initial,999999999,initial):
-        if all(test % i == 0 for i in divisors):
-            return f'The solution is {num}'
+    for number in range(initial,999999999,initial):
+        if all(number % i == 0 for i in divisors):
+            return f'The solution is {number}'
     return 'No solution was found'
 
 print(smallest_multiple())
