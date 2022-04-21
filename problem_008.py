@@ -24,3 +24,16 @@ The four adjacent digits in the 1000-digit number that have the greatest product
 
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 """
+
+from typing import List
+
+given_number: str = "1234567890"
+print(given_number)
+print(len(given_number))
+
+list_of_digits: List = None
+
+i: int = 0
+while i < len(given_number):
+    print(i)
+    i += 1
